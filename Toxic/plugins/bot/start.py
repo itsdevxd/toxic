@@ -84,8 +84,7 @@ async def start_pm(client, message: Message, _):
                 )
     else:
         out = private_panel(_)
-        await message.reply_sticker(
-                "CAACAgUAAxkBAAEO-r9ofhl9UwhDzvXyDxohWDCxTvWPUwAC4gsAApy2kFcqc-w_yX7BbTYE"),
+        await message.reply_sticker(sticker=random.choice(STICKERS)),
         await message.reply_video(
             video="https://ar-hosting.pages.dev/1753090765686.mp4",
             caption=_["start_2"].format(message.from_user.mention, app.mention),
