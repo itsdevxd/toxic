@@ -55,7 +55,6 @@ app = Client("ToxicAss1",
              api_id=API_ID, 
              api_hash=API_HASH, 
              session=session)
-             Dev.run()
 
 
 class Call(PyTgCalls):
