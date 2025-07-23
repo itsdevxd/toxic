@@ -85,8 +85,8 @@ async def start_pm(client, message: Message, _):
     else:
         out = private_panel(_)
         await message.reply_sticker(sticker=random.choice(STICKERS)),
-        await message.reply_video(
-            video="https://ar-hosting.pages.dev/1753090765686.mp4",
+        asyncio.create_task(delete_sticker_after_delay(sticker_message, 5))
+        await message.reply_video(random.choice(START_VIDS),
             caption=_["start_2"].format(message.from_user.mention, app.mention),
             reply_markup=InlineKeyboardMarkup(out),
         )
@@ -102,8 +102,7 @@ async def start_pm(client, message: Message, _):
 async def start_gp(client, message: Message, _):
     out = start_panel(_)
     uptime = int(time.time() - _boot_)
-    await message.reply_video(
-        video="https://ar-hosting.pages.dev/1753090765686.mp4",
+    await message.reply_video(random.choice(START_VIDS),
         caption=_["start_1"].format(app.mention, get_readable_time(uptime)),
         reply_markup=InlineKeyboardMarkup(out),
     )
