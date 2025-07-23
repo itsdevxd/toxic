@@ -92,7 +92,7 @@ START_VIDS = [
     "https://ar-hosting.pages.dev/1753090765686.mp4"
 ]
 
-STICKERS = [
+U_M = [
     "CAACAgUAAxkBAAEO-r9ofhl9UwhDzvXyDxohWDCxTvWPUwAC4gsAApy2kFcqc-w_yX7BbTYE",
     "CAACAgUAAxkBAAEO-sFofhmDkIfsS_SeX7xAt0rlWew1LAACsw4AArzvmFf3UP-QMkPiMTYE",
     "CAACAgUAAxkBAAEPATVogQABiPgUzcp_QfFeNXpm7DiS6BkAAn4TAAIorpFX0dc01tRWa9Y2BA",
