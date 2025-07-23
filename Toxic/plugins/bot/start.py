@@ -87,7 +87,6 @@ async def start_pm(client, message: Message, _):
     else:
         out = private_panel(_)
         await message.reply_sticker(sticker=random.choice(U_M)),
-        asyncio.create_task(delete_sticker_after_delay(sticker_message, 5))
         await message.reply_video(random.choice(START_VIDS),
             caption=_["start_2"].format(message.from_user.mention, app.mention),
             reply_markup=InlineKeyboardMarkup(out),
