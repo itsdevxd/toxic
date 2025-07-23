@@ -47,6 +47,16 @@ async def _clear_(chat_id):
     await remove_active_video_chat(chat_id)
     await remove_active_chat(chat_id)
 
+from pyrogram import Client
+from pyrogram.session import Session
+
+session = Session(timeout=60)
+app = Client("ToxicAss1", 
+             api_id=API_ID, 
+             api_hash=API_HASH, 
+             session=session)
+             app.run()
+
 
 class Call(PyTgCalls):
     def __init__(self):
