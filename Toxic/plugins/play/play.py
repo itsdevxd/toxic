@@ -24,6 +24,14 @@ from Toxic.utils.logger import play_logs
 from Toxic.utils.stream.stream import stream
 from config import BANNED_USERS, lyrical
 
+import asyncio
+
+lock = asyncio.Lock()
+
+async def safe_edit(client, chat_id, message_id, text):
+    async with lock:
+        await client.edit_message_text(chat_id, message_id, text)
+
 
 @app.on_message(
     filters.command(
@@ -376,7 +384,7 @@ async def play_commnd(
         except Exception as e:
             ex_type = type(e).__name__
             err = e if ex_type == "AssistantErr" else _["general_2"].format(ex_type)
-            return await mystic.edit_text(err)
+            await safe_edit(mystic._client, mystic.chat.id, mystic.id, err)
         await mystic.delete()
         return await play_logs(message, streamtype=streamtype)
     else:
