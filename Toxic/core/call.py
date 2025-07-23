@@ -16,6 +16,9 @@ from pytgcalls.types.input_stream import AudioPiped, AudioVideoPiped
 from pytgcalls.types.input_stream.quality import HighQualityAudio, MediumQualityVideo
 from pytgcalls.types.stream import StreamAudioEnded
 
+from pyrogram import Client
+from pyrogram.session import Session
+
 import config
 from Toxic import LOGGER, YouTube, app
 from Toxic.misc import db
@@ -46,15 +49,6 @@ async def _clear_(chat_id):
     db[chat_id] = []
     await remove_active_video_chat(chat_id)
     await remove_active_chat(chat_id)
-
-from pyrogram import Client
-from pyrogram.session import Session
-
-session = Session(timeout=60)
-app = Client("ToxicAss1", 
-             api_id=API_ID, 
-             api_hash=API_HASH, 
-             session=session)
 
 
 class Call(PyTgCalls):
