@@ -103,6 +103,10 @@ STICKERS = [
     "CAACAgUAAxkBAAEPAUNogQFbVCg6zcJbkQFJK3GLN2TXlQACBxgAAigewFR4-lJLTXm2rTYE"
 ]
 
+START_IMG_URL = getenv(
+    "START_IMG_URL", "https://te.legra.ph/file/b8a0c1a00db3e57522b53.jpg"
+)
+
 PING_IMG_URL = getenv(
     "PING_IMG_URL", "https://te.legra.ph/file/b8a0c1a00db3e57522b53.jpg"
 )
