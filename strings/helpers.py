@@ -90,13 +90,15 @@ HELP_8 = """
 """
 
 HELP_9 = """
-<u><b>ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ ᴍᴏᴅᴇ</b></u> [ᴏɴʟʏ ғᴏʀ sᴜᴅᴏᴇʀs] :
+<u><b>ᴀɪ ʙᴏᴛ</b></u> [ᴠᴏɪᴄᴇ ᴀꜱꜱɪꜱᴛᴀɴᴛ & ᴛᴇxᴛ ʙᴏᴛʜ ᴀʀᴇ ꜱᴜᴘᴘᴏʀᴛɪɴɢ] :
 
-/logs : ɢᴇᴛ ʟᴏɢs ᴏғ ᴛʜᴇ ʙᴏᴛ.
+/ask : ask anything 
 
-/logger [ᴇɴᴀʙʟᴇ/ᴅɪsᴀʙʟᴇ] : ʙᴏᴛ ᴡɪʟʟ sᴛᴀʀᴛ ʟᴏɢɢɪɴɢ ᴛʜᴇ ᴀᴄᴛɪᴠɪᴛɪᴇs ʜᴀᴩᴩᴇɴ ᴏɴ ʙᴏᴛ.
+example : /ask aaj date kya hai (bot reply in voice msg)
 
-/maintenance [ᴇɴᴀʙʟᴇ/ᴅɪsᴀʙʟᴇ] : ᴇɴᴀʙʟᴇ ᴏʀ ᴅɪsᴀʙʟᴇ ᴛʜᴇ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ ᴍᴏᴅᴇ ᴏғ ʏᴏᴜʀ ʙᴏᴛ.
+/ask write a code using pthon in short (bot reply in text)
+
+
 """
 
 HELP_10 = """
