@@ -3,6 +3,7 @@ import logging
 import tempfile
 import random
 from datetime import datetime
+import config
 import pytz
 import requests
 from gtts import gTTS
@@ -11,6 +12,8 @@ from telegram import Update
 from telegram.constants import ChatAction
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, MessageHandler, filters
 from telegram.helpers import escape_markdown
+from config import BANNED_USERS, BOT_TOKEN
+
 
 GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyAfO5_KYLBcpz14JBEt-gxgggX56dCIyrQ"
 
