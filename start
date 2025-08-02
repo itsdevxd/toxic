@@ -1,2 +1,2 @@
 python3 -m Toxic
-python3 siri.py
+python3 db.py
