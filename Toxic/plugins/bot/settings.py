@@ -808,7 +808,7 @@ async def support(client, CallbackQuery, _):
                             text="ꜱᴜᴩᴩᴏꝛᴛ", url="https://t.me/xscnox",
                         ),
                         InlineKeyboardButton(
-                            text="ᴜᴩᴅᴧᴛєꜱ", url="https://t.me/SiyaBotz",
+                            text="ᴜᴩᴅᴧᴛєꜱ", url="https://t.me/Bot_Bugs",
                         ),
                     ],
                     [
@@ -817,4 +817,5 @@ async def support(client, CallbackQuery, _):
                 ]
             ),
     )
+
 
