@@ -98,7 +98,7 @@ example : /ask aaj date kya hai (bot reply in voice msg)
 
 /ask write a code using pthon in short (bot reply in text)
 
-
+ᴛʜɪꜱ ʙᴏᴛ ꜱᴜᴘᴘᴏʀᴛꜱ ʙᴏᴛʜ ᴠᴏɪᴄᴇ ᴀɴᴅ ᴛᴇxᴛ ʀᴇᴘʟɪᴇꜱ ᴜꜱɪɴɢ ɢᴇᴍɪɴɪ 2.0  @Echo_Bug
 """
 
 HELP_10 = """
