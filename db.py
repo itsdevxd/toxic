@@ -92,22 +92,22 @@ async def ask_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_voice(voice=open(ogg_path, "rb"))
         os.remove(ogg_path)
 
-async def random_group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    if update.message and not update.message.text:
-        return
-    if random.random() < 0.1:
-        text = update.message.text
-        logging.info(f"Randomly analyzing: {text}")
-        raw_reply = ask_gemini(text)
-        reply = add_flirty_tone(raw_reply)
-        ogg_path = text_to_ogg(reply, lang="hi")
-        await update.message.chat.send_action(action=ChatAction.RECORD_VOICE)
-        await update.message.reply_voice(voice=open(ogg_path, "rb"))
-        os.remove(ogg_path)
+#async def random_group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
+   # if update.message and not update.message.text:
+      #  return
+   # if random.random() < 0.1:
+      #  text = update.message.text
+      #  logging.info(f"Randomly analyzing: {text}")
+    #    raw_reply = ask_gemini(text)
+      #  reply = add_flirty_tone(raw_reply)
+      #  ogg_path = text_to_ogg(reply, lang="hi")
+      #  await update.message.chat.send_action(action=ChatAction.RECORD_VOICE)
+    #    await update.message.reply_voice(voice=open(ogg_path, "rb"))
+      #  os.remove(ogg_path)
 
 if __name__ == "__main__":
     app = ApplicationBuilder().token(BOT_TOKEN).build()
     app.add_handler(CommandHandler("ask", ask_handler))
-    app.add_handler(MessageHandler(filters.TEXT & (~filters.COMMAND), random_group_reply))
+  #  app.add_handler(MessageHandler(filters.TEXT & (~filters.COMMAND), random_group_reply))
     logging.info("Bot started with error-free MarkdownV2 🚀")
     app.run_polling()
