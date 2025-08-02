@@ -24,7 +24,7 @@ unidecode
 yt-dlp
 youtube-search
 youtube-search-python
-python-telegram-bot==20.6
+python-telegram-bot
 gtts==2.5.1
 pytz==2024.1
 requests==2.31.0
