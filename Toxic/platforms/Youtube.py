@@ -27,7 +27,7 @@ from config import API_URL, API_KEY, DOWNLOADS_DIR
 PROXY_LIST_ENV = os.getenv("YTDL_PROXIES", "")
 # Optional single HTTPS relay server that accepts a 'url' param and proxies content
 # Example: "https://my-relay.example.com/proxy?url="
-SERVER_RELAY = os.getenv("YTDL_SERVER_RELAY", "")  # must end with '=' or be format that allows appending ?url=
+SERVER_RELAY = os.getenv("https://toxicapi.vercel.app/api/proxy?url=", "")  # must end with '=' or be format that allows appending ?url=
 # Optional: maximum retries on network errors
 MAX_NETWORK_RETRIES = int(os.getenv("YTDL_MAX_RETRIES", "3"))
 # Timeout seconds for httpx requests
