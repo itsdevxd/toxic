@@ -449,4 +449,8 @@ class YouTubeAPI:
     async def track(self, link: str, videoid: Union[bool, str] = None) -> tuple[dict, str]:
         if videoid:
             link = self.BASE_URL + link
-        if "&"
+        if "&" in link:
+            link = link.split("&")[0]
+        results = VideosSearch(link, limit=1)
+        data = (await results.next())["result"][0]
+        return data, data["id"]
